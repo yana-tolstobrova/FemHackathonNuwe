@@ -49,6 +49,19 @@ const ChartUsersYear = () => {
       };
     }
   }, [chartData]);
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      const data = payload[0].payload;
+      return (
+        <div className="custom-tooltip">
+          <p className="label">{`${label}`}</p>
+          <p className="intro">{`Internet users: ${data.internet_users_number}`}</p>
+        </div>
+      );
+    }
+    return null;
+  };
+
 
   return (
     <div>
@@ -58,12 +71,13 @@ const ChartUsersYear = () => {
           height={500}
           data={chartData[currentIndex].data}
           layout="vertical" // Set layout to "vertical"
-          margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+          margin={{ top: 60, right: 30, left: 20, bottom: 5 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="number" /> {/* Use XAxis as numeric axis */}
+          <XAxis type="number"
+                      tickFormatter={(value) => `${value / 1000}k`}/> 
           <YAxis dataKey="country" type="category" /> {/* Use YAxis as category axis */}
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <Legend />
           <Bar
             dataKey="internet_users_number"
@@ -71,7 +85,7 @@ const ChartUsersYear = () => {
             stroke="rgba(75, 192, 192, 1)"
                   />
 
-            <text x="50%" y={30} textAnchor="middle">
+            <text x="50%" y={40} textAnchor="middle">
             Year: {chartData[currentIndex].year}
           </text>
         </BarChart>

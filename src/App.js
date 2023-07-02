@@ -1,10 +1,19 @@
 import './App.css';
-import ScrollAnimations from './components/ScrollAnimations/ScrollAnimations';
-
+import ChartTopTen from './components/ChartTopTen'
+import Intro from './components/Intro/Intro'
+import AnimatedBackground from './components/AnimatedBackground/AnimatedBackground'
+import Map from './components/MapGeo'
+import ChartUsersYear from './components/ChartUsersYear'
+import ChartUsersYearCountries from './components/ChartUsersYearCountry';
 function App() {
   return (
     <div>
-      <ScrollAnimations />
+      <AnimatedBackground />
+      <Intro />
+      <ChartTopTen />
+      <ChartUsersYear />
+      <ChartUsersYearCountries />
+      <Map />
     </div>
   );
 }
