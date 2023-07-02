@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Chart from 'react-apexcharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 export default function Charts() {
   const [chartData, setChartData] = useState([]);
@@ -20,8 +20,8 @@ export default function Charts() {
       try {
         const responses = await Promise.all(dataPromises);
         const chartData = responses.map((response, index) => ({
-          x: startYear + index,
-          y: response.data.Data.Total
+          year: startYear + index,
+          data: response.data.Data.Total
         }));
         setChartData(chartData);
       } catch (error) {
@@ -35,32 +35,20 @@ export default function Charts() {
   return (
     <div style={{ width: '1200px', height: '400px' }}>
       {chartData.length > 0 ? (
-        <Chart
-          options={{
-            chart: {
-              id: 'line-chart',
-            },
-            xaxis: {
-              type: 'numeric',
-              title: {
-                text: 'Year',
-              },
-            },
-            yaxis: {
-              title: {
-                text: 'Data',
-              },
-            },
-          }}
-          series={[
-            {
-              name: 'Data',
-              data: chartData,
-            },
-          ]}
-          type="line"
-          height={400}
-        />
+        <LineChart width={1200} height={400} data={chartData}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="year" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line
+            type="monotone"
+            dataKey="data"
+            stroke="#3E98C7"
+            animationDuration={12000}
+            isAnimationActive={true}
+          />
+        </LineChart>
       ) : (
         <p>Loading chart...</p>
       )}
