@@ -1,9 +1,12 @@
 import './App.css';
+import ChartUsersYearCountries from './components/ChartUsersYearCountry';
+import ChartTopTen from './components/ChartTopTen'
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <ChartUsersYearCountries />
+      <ChartTopTen />
     </div>
   );
 }
