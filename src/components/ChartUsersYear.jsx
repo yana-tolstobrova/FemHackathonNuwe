@@ -33,9 +33,9 @@ export default function Charts() {
   }, []);
 
   return (
-    <div style={{ width: '1200px', height: '400px' }}>
+    <div style={{ width: '700px', height: '400px' }}>
       {chartData.length > 0 ? (
-        <LineChart width={1200} height={400} data={chartData}>
+        <LineChart width={700} height={400} data={chartData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis />
@@ -45,7 +45,7 @@ export default function Charts() {
             type="monotone"
             dataKey="data"
             stroke="#3E98C7"
-            animationDuration={12000}
+            animationDuration={2000}
             isAnimationActive={true}
           />
         </LineChart>

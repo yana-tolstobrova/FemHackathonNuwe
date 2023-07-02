@@ -54,7 +54,7 @@ const ChartUsersYear = () => {
     <div>
       {chartData && chartData.length > 0 && (
         <BarChart
-          width={1200}
+          width={800}
           height={500}
           data={chartData[currentIndex].data}
           layout="vertical" // Set layout to "vertical"
