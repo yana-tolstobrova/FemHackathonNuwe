@@ -70,22 +70,16 @@ const ChartUsersYear = () => {
           width={800}
           height={500}
           data={chartData[currentIndex].data}
-          layout="vertical" // Set layout to "vertical"
+          layout="vertical"
           margin={{ top: 60, right: 30, left: 20, bottom: 5 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="number"
-                      tickFormatter={(value) => `${value / 1000}k`}/> 
-          <YAxis dataKey="country" type="category" /> {/* Use YAxis as category axis */}
+          <XAxis type="number" tickFormatter={(value) => `${value / 1000}k`} />
+          <YAxis dataKey="country" type="category" />
           <Tooltip content={<CustomTooltip />} />
-          <Legend />
-          <Bar
-            dataKey="internet_users_number"
-            fill="rgba(75, 192, 192, 0.2)"
-            stroke="rgba(75, 192, 192, 1)"
-                  />
-
-            <text x="50%" y={40} textAnchor="middle">
+          <Legend payload={[{ value: 'Internet users', type: 'line' }]} /> {/* Set the payload for the legend */}
+          <Bar dataKey="internet_users_number" fill="rgba(75, 192, 192, 0.2)" stroke="rgba(75, 192, 192, 1)" />
+          <text x="50%" y={40} textAnchor="middle">
             Year: {chartData[currentIndex].year}
           </text>
         </BarChart>
@@ -95,3 +89,4 @@ const ChartUsersYear = () => {
 };
 
 export default ChartUsersYear;
+

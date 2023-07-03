@@ -8,12 +8,14 @@ import MapGeo from './components/MapGeo/MapGeo';
 function App() {
   return (
     <div>
-      <AnimatedBackground />
-      <Intro />
-      <ChartTopTen />
+      <div className='hero-section'>
+        <AnimatedBackground />
+        <Intro />
+      </div>
       <ChartUsersYear />
       <ChartUsersYearCountries />
-      <MapGeo />
+      <ChartTopTen />
+      <Map />
     </div>
   );
 }
