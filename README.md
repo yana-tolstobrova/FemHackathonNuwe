@@ -141,7 +141,24 @@ $ npm i recharts
 [Here is a link](https://www.figma.com/file/CoNsQK6K1zWxXIAMHVujLS/DataWave?type=design&node-id=0%3A1&mode=design&t=RrzqTpKQVwFehdHI-1) to our Figma document with wireframe and design system.
 
 ## Collaborators
- [<img src="https://avatars.githubusercontent.com/u/107352744?v=4" width=115><br><sub>Monica Blanco</sub>](https://github.com/mgblanco10) 
-  [<img src="https://avatars.githubusercontent.com/u/126439762?v=4" width=115><br><sub>Yana Tolstobrova</sub>](https://github.com/yana-tolstobrova) 
-
+<div style="display: flex;">
+  <div>
+    <a href="https://github.com/mgblanco10">
+      <img src="https://avatars.githubusercontent.com/u/107352744?v=4" width="115">
+      <br>
+      <sub>Monica Blanco</sub>
+    </a>
+  </div>
+  <div>
+    <a href="https://github.com/yana-tolstobrova">
+      <img src="https://avatars.githubusercontent.com/u/126439762?v=4" width="115">
+      <br>
+      <sub>Yana Tolstobrova</sub>
+    </a>
+  </div>
+</div>
+<div class="">
+[<img src="https://avatars.githubusercontent.com/u/107352744?v=4" width=115><br><sub>Monica Blanco</sub>](https://github.com/mgblanco10) 
+[<img src="https://avatars.githubusercontent.com/u/126439762?v=4" width=115><br><sub>Yana Tolstobrova</sub>](https://github.com/yana-tolstobrova) 
+</div>
 
