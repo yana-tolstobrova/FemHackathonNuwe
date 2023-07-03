@@ -2,3 +2,17 @@
     height: 575px;
     overflow: hidden;
 }
+.block{
+    padding: 60px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 2.5em;
+    width: 10em;
+    color: rgba(34, 51, 118, 1);
+}
+h2.line{
+    width: 100%;
+    text-align: center;
+}

@@ -4,6 +4,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'r
 
 export default function Charts() {
   const [chartData, setChartData] = useState([]);
+  const [animationIndex, setAnimationIndex] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,13 +33,26 @@ export default function Charts() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const animateChart = () => {
+      if (animationIndex < chartData.length) {
+        setTimeout(() => {
+          setAnimationIndex(animationIndex + 1);
+        }, 1000);
+      }
+    };
+
+    animateChart();
+  }, [animationIndex, chartData]);
+
   const formatYAxisValue = (value) => {
     if (value >= 1000000) {
       return `${value / 1000000000}B`;
     }
     return value;
   };
-const CustomTooltip = ({ active, payload, label }) => {
+
+  const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       const data = payload[0].payload;
       return (
@@ -50,6 +64,7 @@ const CustomTooltip = ({ active, payload, label }) => {
     }
     return null;
   };
+
   return (
     <div style={{ width: '700px', height: '400px' }}>
       {chartData.length > 0 ? (
@@ -63,9 +78,21 @@ const CustomTooltip = ({ active, payload, label }) => {
             type="monotone"
             dataKey="data"
             stroke="#3E98C7"
-            animationDuration={2000}
-            isAnimationActive={true}
+            strokeWidth={2}
+            isAnimationActive={false}
+            dot={false}
           />
+          {animationIndex < chartData.length && (
+            <Line
+              type="monotone"
+              data={chartData.slice(0, animationIndex + 1)}
+              dataKey="data"
+              stroke="#3E98C7"
+              strokeWidth={2}
+              animationDuration={1000}
+              dot={false}
+            />
+          )}
         </LineChart>
       ) : (
         <p>Loading chart...</p>

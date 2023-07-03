@@ -67,7 +67,7 @@ export default function ChartUsersYearCountries() {
   return (
     <div>
       {countryData && (
-        <div style={{ textAlign: 'center', width:'80%', margin: '0 auto 20px auto'}}>
+        <div style={{ textAlign: 'center', width:'80%', margin: '60px auto'}}>
         <div style={{ display: 'flex', justifyContent: 'space-evently', alignItems: 'center' }}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '20%' }}>
             <span>1990</span>
