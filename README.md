@@ -1,30 +1,51 @@
- Data Wave
+Data Wave
 
 # Table of Contents
-1. [Introduction](#introduction)
-2. [Installation](#installation)
+1. [Description](#description)
+2. [Organization](#organization)
+3. [Usage](#usage)
+4. [Tools and technologies used](#tools-and-technologies-used)
+5. [Installation](#installation)
 	* [Step 1](#step-1)
 	* [Step 2](#step-2)
 	* [Step 3](#step-3)
 	* [Step 4](#step-4)
 	* [Step 5](#step-5)
 	* [Step 6](#step-6)
-3. [Usage](#usage)
-4. [Tools and technologies used](#tools-and-technologies-used)
-5. [Description](#description)
-6. [Organization](#organization)
-	* [Decisions and Considerations](#decisions-and-considerations)
+    * [Creating React App](#creating-react-app)
+    * [Decisions and Considerations](#decisions-and-considerations)
 	* [Decisions by task](#decisions-by-task)
-	* [Figma wireframes](#figma-wireframes)
-7. [Associated content](#associated-content)
-8. [Collaborators](#collaborators)
+    * [Associated tasks](#associated-tasks)
+6. [Collaborators](#collaborators)
 
-
-## Introduction
-
-Data Wave is a project carried out in the international FemHack Vol.II Hackaton.
+## Description
+Data Wave is a project carried out in the international FemHack Vol.II.
 The challenge is based on the creation of an application for the visualization of data on the use of the Internet by countries.
 
+We have completed the three tasks, at this moment our application is a minimum viable product, so we met the proposed objectives and we are proud of the result, we still have a lot to learn, we got stuck in some parts and it was hard, but we supported each other and we continue on the path and today writing this readme we are proud to say that we have achieved it.
+We believe that we still need some things to improve on styles and api timeout, maybe a spinner to give feedback, and in retrospect we realize mistakes and things we could have done if we had more time.
+
+## Organization
+For the organization of this project we began by understanding the expected website, for that we began with the configuration of the development environment and implementing the connection with the Backend, after seeing the data as we received it, we focused on seeing what we wanted to do for it. We brainstormed and then we made a wireframe to see how we would display the data and what libraries we would need for it.
+We created a repository and we divided ourselves by components and began to work, according to the methodology Kunban. 
+
+## Usage
+ - `Functionality 1`: Welcome the user to the application and briefly explain the context and uses of the application
+ - `Functionality 2`: Presentation of database information.
+ - `Functionality 2a`: Presentation of the first graph with the number of Internet users per year.
+ - `Functionality 2b`: Second graph presentation of how many people can access the internet by country and year.
+ - `Functionality 2c`: Interactive world map presentation where when you move with the mouse it says the percentage of people with internet and you have the option to see this information by year.
+
+The functionality and objective of this application was to build a website with a good user experience to visualize the data, customizing each of the graphs with different animations.
+
+## Tools and technologies used
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50"/>
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" />
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" />
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="50" /> 
+
+### Used bookstores:
+ @nivo/geo, axios, d3-geo, recharts, react-circular-progressbar, react-intersection-observer, framer-motion
 
 ## Installation
 ### Description of Data Wave project/service
@@ -60,30 +81,36 @@ Building and deploying could take some time.
 
 Once you see the  ![Static Badge](https://img.shields.io/badge/Live-green) it means the backend was successfully deployed!
 
-## Usage
- - `Functionality 1`: Welcome the user to the application and briefly explain the context and uses of the application
- - `Functionality 2`: Presentation of database information.
- - `Functionality 2a`: Presentation of the first graph with the number of Internet users per year.
- - `Functionality 2b`: Second graph presentation of how many people can access the internet by country and year.
- - `Functionality 2c`: Interactive world map presentation where when you move with the mouse it says the percentage of people with internet and you have the option to see this information by year.
+### Creating React App
+To create a React app, you can follow these steps:
+### Step 1: Set up the Development Environment
+Before creating a React app, make sure you have Node.js and npm (Node Package Manager) installed on your system. You can download and install Node.js from the official website: https://nodejs.org
 
-The functionality and objective of this application was to build a website with a good user experience to visualize the data, customizing each of the graphs with different animations.
+### Step 2: Create a New React App
+Once you have Node.js and npm installed, you can create a new React app using the create-react-app command-line tool. Open your terminal or command prompt and run the following command:
 
-## Tools and technologies used
-<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50"/>
-<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" />
-<a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" /></a> 
-<a href="https://www.tailwindcss.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="Tailwind CSS" height="50" /></a>  
+```
+$ npx create-react-app my-app
+```
+This command creates a new directory named my-app (you can replace my-app with the desired name for your app) and sets up a basic React project structure with the necessary dependencies.
 
-### Used bookstores: @nivo/geo, axios, d3-geo, recharts, react-circular-progressba
+### Step 3: Navigate to the Project Directory
+After the app is created, navigate to the project directory by running the following command:
 
-## Description
-We have completed the three tasks, at this moment our application is a minimum viable product, so we met the proposed objectives and we are proud of the result, we still have a lot to learn, we got stuck in some parts and it was hard, but we supported each other and we continue on the path and today writing this readme we are proud to say that we have achieved it.
-We believe that we still need some things to improve on styles and api timeout, maybe a spinner to give feedback, and in retrospect we realize mistakes and things we could have done if we had more time.
+```
+$ cd my-app
+```
+### Step 4: Start the Development Server
+In the project directory, you can start the development server by running the following command:
 
-## Organization
-For the organization of this project we began by understanding the expected website, for that we began with the configuration of the development environment and implementing the connection with the Backend, after seeing the data as we received it, we focused on seeing what we wanted to do for it. We brainstormed and then we made a wireframe to see how we would display the data and what libraries we would need for it.
-We created a repository and we divided ourselves by components and we began to work, as a framework we did it with kanban to move forward and see at all times what each member was doing and thus we were completing the tasks.
+```
+$ npm start
+```
+This command starts the development server and opens the app in your default web browser. Any changes you make to your React components will automatically reload the app.
+
+### Step 5: Edit the App
+Open the project directory in your preferred code editor. The main file you'll be working with is src/App.js. You can edit this file or create new components in the src directory to build your app.
+
 
 ### Decisions and Considerations
 Here are some key considerations and decisions we have made:
@@ -114,7 +141,7 @@ $ npm i recharts
 
 + Create and implement chart displaying Internet Users x Year x Country. The chart displays how many Internet Users each specific Country could access the Internet per Year. The user should have the ability to change the Country or Year at any time. 
 
-To create this chart we have used a React Circular Progressbar component, built with SVG and extensively customizable. And to fetch data from backend server - axios. Here is how you can install it to your project:
+To create this chart we have used a React Circular Progressbar component, built with SVG and extensively customizable. And to fetch data from backend server - 'axios'. Here is how you can install it to your project:
 
 ```
 $ npm i react-circular-progressbar
@@ -163,20 +190,19 @@ $ npm i @nivo/geo
 [Here is a link](https://www.figma.com/file/CoNsQK6K1zWxXIAMHVujLS/DataWave?type=design&node-id=0%3A1&mode=design&t=RrzqTpKQVwFehdHI-1) to our Figma document with wireframe and design system.
 
 ## Collaborators
-<div style="display: flex;">
+<div style="display: flex">
   <div>
-    <a href="https://github.com/mgblanco10">
-      <img src="https://avatars.githubusercontent.com/u/107352744?v=4" width="115">
+    <a href="https://www.linkedin.com/in/monicablancocalvi%C3%B1o/">
+      <img src="https://avatars.githubusercontent.com/u/107352744?v=4" width="100" borderRadius="50">
       <br>
       <sub>Monica Blanco</sub>
     </a>
   </div>
   <div>
-    <a href="https://github.com/yana-tolstobrova">
-      <img src="https://avatars.githubusercontent.com/u/126439762?v=4" width="115">
+    <a href="https://www.linkedin.com/in/yana-tolstobrova/">
+      <img src="https://avatars.githubusercontent.com/u/126439762?v=4" width="100" borderRadius="50">
       <br>
       <sub>Yana Tolstobrova</sub>
     </a>
   </div>
 </div>
-
