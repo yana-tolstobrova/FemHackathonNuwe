@@ -15,7 +15,7 @@ function App() {
       <ChartUsersYear />
       <ChartUsersYearCountries />
       <ChartTopTen />
-      <Map />
+      <MapGeo/>
     </div>
   );
 }
