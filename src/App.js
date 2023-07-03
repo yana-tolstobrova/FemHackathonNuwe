@@ -3,7 +3,6 @@ import ChartTopTen from './components/Charts/ChartTopTen'
 import Intro from './components/Intro/Intro'
 import AnimatedBackground from './components/AnimatedBackground/AnimatedBackground'
 import ChartUsersYear from './components/Charts/ChartUsersYear'
-import ChartUsersYearCountries from './components/Charts/ChartUsersYearCountry';
 import MapGeo from './components/MapGeo/MapGeo';
 import ScrollAnimation from './components/LineAnimation';
 function App() {
