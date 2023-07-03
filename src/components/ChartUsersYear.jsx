@@ -32,15 +32,33 @@ export default function Charts() {
     fetchData();
   }, []);
 
+  const formatYAxisValue = (value) => {
+    if (value >= 1000000) {
+      return `${value / 1000000000}B`;
+    }
+    return value;
+  };
+const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      const data = payload[0].payload;
+      return (
+        <div className="custom-tooltip">
+          <p className="label">{`${label}`}</p>
+          <p className="intro">{`Internet users: ${data.data}`}</p>
+        </div>
+      );
+    }
+    return null;
+  };
   return (
     <div style={{ width: '700px', height: '400px' }}>
       {chartData.length > 0 ? (
         <LineChart width={700} height={400} data={chartData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
+          <YAxis tickFormatter={formatYAxisValue} />
+          <Tooltip content={<CustomTooltip />} />
+          <Legend payload={[{ value: 'Years', type: 'line' }]} />
           <Line
             type="monotone"
             dataKey="data"

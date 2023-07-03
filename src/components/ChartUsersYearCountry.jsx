@@ -51,7 +51,6 @@ export default function ChartUsersYearCountries() {
     const countryData = countryResponse.data.Data;
     setCountryData(countryData);
 
-    // Generate a random color for the chart
     const randomColor = generateRandomColor();
     setChartColor(randomColor);
   };
@@ -68,15 +67,20 @@ export default function ChartUsersYearCountries() {
   return (
     <div>
       {countryData && (
-        <div style={{ textAlign: 'center' }}>
-          <h2>{currentYear}</h2>
-          <div style={{ width: '200px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', width:'80%', margin: '0 auto 20px auto'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-evently', alignItems: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '20%' }}>
+            <span>1990</span>
+            <input type="range" min="1990" max="2020" value={currentYear} onChange={handleYearChange} />
+            <span>2020</span>
+          </div>
+          <div style={{ width: '20em', margin: '0 auto 20px auto' }}>
             <CircularProgressbar
               value={getPercentage(countryData)}
               text={`${getPercentage(countryData).toFixed(2)}%`}
               styles={{
                 path: {
-                  stroke: chartColor, // Set the chart color dynamically
+                  stroke: chartColor,
                   strokeLinecap: 'butt',
                   transition: 'ease-in-out 0.1s ease 0s',
                 },
@@ -85,24 +89,22 @@ export default function ChartUsersYearCountries() {
                   strokeLinecap: 'butt',
                 },
                 text: {
-                  fill: chartColor, // Set the text color dynamically
+                  fill: chartColor,
                   fontSize: '16px',
                 },
               }}
             />
+            </div>
+            <h2 style={{ fontSize:'24px', textAlign: 'center', width: '20%'}} > {currentYear}</h2>
+          
           </div>
-          <select value={countryName} onChange={handleCountryChange}>
+        <select value={countryName} onChange={handleCountryChange} style={{ textAlign: 'center', fontSize:'22px', marginBottom:'20px' }}>
             {countries.map((country) => (
               <option key={country} value={country}>
                 {country}
               </option>
             ))}
-          </select>
-
-          <span>1990</span>
-          <input type="range" min="1990" max="2020" value={currentYear} onChange={handleYearChange} />
-          <span>2020</span>
-        </div>
+          </select></div>
       )}
     </div>
   );

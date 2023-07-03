@@ -141,7 +141,7 @@ const MapGeo = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto' }}>
-      <div style={{ position: 'relative', width: '45%', height: '670px' }}>
+      <div style={{ position: 'relative', width: '100%', height: '670px' }}>
         <img src={marImage} alt="Mar" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.4 }} />
         <div style={{ position: 'absolute', top: '0px', left: '0', width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
