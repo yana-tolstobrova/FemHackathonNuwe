@@ -94,6 +94,45 @@ Here are some key considerations and decisions we have made:
 - We have looked for innovative ways to present data and have considered unique ideas that can make the visualization more engaging and memorable for users.
 ### Decisions by task
 
+**Task 1: Displaying charts:**
+
++ Setup development environment and implement Backend connection.
+
+Since Backend server had Docker we´ve decided to deploy our backend server on render.com in order to make it more accessible. For find more details go [here](https://github.com/yana-tolstobrova/FemHackathonNuwe#description-of-data-wave-projectservice).
+
++ Create and implement chart displaying Internet Users x Year. The chart displays how many Internet Users could access the Internet per Year. 
+
+To create this chart we have used charting library built with React and D3 - 'recharts'. And to fetch data from backend server - axios. Here is how you can install it to your project:
+
+```
+$ npm i axios
+```
+```
+$ npm i recharts
+```
+
++ Create and implement chart displaying Internet Users x Year x Country. The chart displays how many Internet Users each specific Country could access the Internet per Year. The user should have the ability to change the Country or Year at any time. 
+
+To create this chart we have used a React Circular Progressbar component, built with SVG and extensively customizable. And to fetch data from backend server - axios. Here is how you can install it to your project:
+
+```
+$ npm i react-circular-progressbar
+```
+```
+$ npm i axios
+```
+
++ Create and implement last chart displaying Top 10 Countries with the largest number of internet user per Year.
+
+To create this chart we have used charting library built with React and D3 - 'recharts'. And to fetch data from backend server - axios. Here is how you can install it to your project:
+
+```
+$ npm i axios
+```
+```
+$ npm i recharts
+```
+
 
 ### Figma wireframes
 [Link to design wireframes](/assets/wireframe.png)
