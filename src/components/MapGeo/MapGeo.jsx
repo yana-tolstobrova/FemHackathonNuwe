@@ -192,9 +192,9 @@ const MapGeo = () => {
                 {
                   anchor: 'bottom-left',
                   direction: 'column',
-                  justify: true,
-                  translateX: 405,
-                  translateY: -235,
+                  justify: false,
+                  translateX: 360,
+                  translateY: -250,
                   itemsSpacing: 1,
                   itemWidth: 65,
                   itemHeight: 25,
@@ -211,6 +211,7 @@ const MapGeo = () => {
                       }
                     }
                   ],
+                  title: 'Legend', 
                   data: [
                     {
                       label: '0-20%',
@@ -238,7 +239,7 @@ const MapGeo = () => {
                       color: '#8E3EC2'
                     },
                     {
-                        label: '',
+                        label: 'Nan',
                         id: '00',
                         color: '#5D6D7E'
                     }
@@ -248,16 +249,6 @@ const MapGeo = () => {
                
           />
         </div>
-      </div>
-      <div style={{ position: 'absolute', marginRight: '1000px', marginTop: '160px', fontFamily:'serif'  }}>
-        {tooltipContent && (
-          <div>
-            <strong>{tooltipContent.countryName}</strong>
-            <br />
-            Internet Users
-            <div style={{position:'absolute', width:'130px', marginTop: '130px',marginLeft:'27px', fontSize: '12px', fontFamily:'serif' }}>No Information</div>
-          </div>
-        )}
       </div>
     </div>
   );
