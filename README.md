@@ -55,6 +55,7 @@ Choose Docker as the Runtime option.
 ![New Service](https://i.ibb.co/nnRNZvT/step5.png)
 ### Step 6
 Building and deploying could take some time.
+![New Service](https://i.ibb.co/VLrHCPK/step6.png)
 
 Once you see the  ![Static Badge](https://img.shields.io/badge/Live-green) it means the backend was successfully deployed!
 
