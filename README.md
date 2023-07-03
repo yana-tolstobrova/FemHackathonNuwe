@@ -133,12 +133,10 @@ $ npm i axios
 $ npm i recharts
 ```
 
+**Associated tasks:**
++ Color palette both on the website as well as in each task.
++ How the content is displayed on the website. The User Experience (UX) should be a priority.
 
-### Figma wireframes
-[Link to design wireframes](/assets/wireframe.png)
+[Here is a link](https://www.figma.com/file/CoNsQK6K1zWxXIAMHVujLS/DataWave?type=design&node-id=0%3A1&mode=design&t=RrzqTpKQVwFehdHI-1) to our Figma document with wireframe and design system.
 
-### Associated content
-To carry out this project and obtain the data, they provided us with a repo for the backend.
-To carry out this project and obtain the data, they provided us with a repo for the backend, which first of all we had to clone.
-el repo utilizado es/; https://github.com/nuwe-reports/femhack-II-frontend 
 
