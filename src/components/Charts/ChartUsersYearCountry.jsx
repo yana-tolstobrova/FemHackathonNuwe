@@ -70,9 +70,9 @@ export default function ChartUsersYearCountries() {
         <div style={{ textAlign: 'center', width:'80%', margin: '60px auto'}}>
         <div style={{ display: 'flex', justifyContent: 'space-evently', alignItems: 'center' }}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '20%' }}>
-            <span>1990</span>
+            <span style={{ color:'white', fontSize: '16px'}}>1990</span>
             <input type="range" min="1990" max="2020" value={currentYear} onChange={handleYearChange} />
-            <span>2020</span>
+            <span style={{ color:'white', fontSize: '16px'}}>2020</span>
           </div>
           <div style={{ width: '20em', margin: '0 auto 20px auto' }}>
             <CircularProgressbar
@@ -95,7 +95,7 @@ export default function ChartUsersYearCountries() {
               }}
             />
             </div>
-            <h2 style={{ fontSize:'24px', textAlign: 'center', width: '20%'}} > {currentYear}</h2>
+            <h2 style={{ fontSize:'24px', textAlign: 'center', width: '20%', color:'white'}} > {currentYear}</h2>
           
           </div>
         <select value={countryName} onChange={handleCountryChange} style={{ textAlign: 'center', fontSize:'22px', marginBottom:'20px' }}>

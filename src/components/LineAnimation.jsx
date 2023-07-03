@@ -24,8 +24,8 @@ export default function ScrollAnimation() {
   return (
     <div>
       <div id="line" className={`line ${isVisible ? 'line-appear' : ''}`} />
-      <div className={`content ${isVisible ? 'content-appear' : ''}`}>
-        <h2>How many Internet users each country could access the Internet?</h2>
+      <div className={` content ${isVisible ? 'content-appear' : ''}`}>
+        <h2 className='light-text'>How many Internet users each country could access the Internet?</h2>
         <ChartUsersYearCountries />
       </div>
     </div>

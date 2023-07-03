@@ -5,6 +5,7 @@ import AnimatedBackground from './components/AnimatedBackground/AnimatedBackgrou
 import ChartUsersYear from './components/Charts/ChartUsersYear'
 import ChartUsersYearCountries from './components/Charts/ChartUsersYearCountry';
 import MapGeo from './components/MapGeo/MapGeo';
+import ScrollAnimation from './components/LineAnimation';
 function App() {
   return (
     <div>
@@ -17,8 +18,7 @@ function App() {
         <h2>How many Internet users could access the Internet per year?</h2>
       </div>
       <div>
-        <h2 className='line'>How many Internet users each country could access the Internet?</h2>
-        <ChartUsersYearCountries />
+        <ScrollAnimation/>
       </div>
       <div className='block'>
         <h2>Top 10 Countries with the largest number of internet users</h2>
