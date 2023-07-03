@@ -133,6 +133,19 @@ $ npm i axios
 ```
 $ npm i recharts
 ```
+
+**Task 2: Animating website:**
+
+For website animation we were using pure CSS animation and for second chart two libraries: 'react-intersection-observer' and 'framer-motion'. Here is how you can install them to your project:
+
+```
+$ npm install react-intersection-observer
+```
+```
+$ npm intall framer-motion
+```
+
+**Task 3: World Map data visualization:**
 + Create the data visualization of percentage of of internet user by country and year on the world map using the d3-geo and @nivo/geo libraries.
 
 And to get data from backend server: fecth. For this task it was installed
@@ -142,7 +155,6 @@ $ npm i d3-geo
 ```
 $ npm i @nivo/geo
 ```
-
 
 **Associated tasks:**
 + Color palette both on the website as well as in each task.
