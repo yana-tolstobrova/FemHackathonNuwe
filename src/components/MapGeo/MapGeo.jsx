@@ -141,7 +141,7 @@ const MapGeo = () => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto' }}>
-      <div style={{ position: 'relative', width: '100%', height: '670px' }}>
+      <div style={{ position: 'relative', width: '100%', height: '900px' }}>
         <img src={marImage} alt="Mar" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.4 }} />
         <div style={{ position: 'absolute', top: '0px', left: '0', width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -154,13 +154,13 @@ const MapGeo = () => {
           <ResponsiveChoropleth
             data={countriesData.features}
             features={countriesData.features}
-            margin={{ top: 30, right: 0, bottom: 0, left: 0 }}
+            margin={{ top: 40, right: 0, bottom: 0, left: 0 }}
             colors="nivo"
             domain={[0, 100]}
             unknownColor="#666666"
             label="properties.nombre"
             valueFormat=".2s"
-            projectionScale={135}
+            projectionScale={160}
             projectionTranslation={[0.5, 0.5]}
             projectionRotation={[0, 0, 0]}
             enableGraticule={false}
@@ -193,8 +193,8 @@ const MapGeo = () => {
                   anchor: 'bottom-left',
                   direction: 'column',
                   justify: true,
-                  translateX: 28,
-                  translateY: -120,
+                  translateX: 405,
+                  translateY: -235,
                   itemsSpacing: 1,
                   itemWidth: 65,
                   itemHeight: 25,
@@ -242,14 +242,14 @@ const MapGeo = () => {
                         id: '00',
                         color: '#5D6D7E'
                     }
-                  ]
+                  ], 
                 }
               ]}
                
           />
         </div>
       </div>
-      <div style={{ position: 'absolute', marginRight: '697px', marginTop: '137px', fontFamily:'serif'  }}>
+      <div style={{ position: 'absolute', marginRight: '1000px', marginTop: '160px', fontFamily:'serif'  }}>
         {tooltipContent && (
           <div>
             <strong>{tooltipContent.countryName}</strong>
