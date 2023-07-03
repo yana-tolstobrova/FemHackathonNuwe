@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/FemHackathonNuwe/static/css/main.ced10831.css",
+    "main.js": "/FemHackathonNuwe/static/js/main.7f0689f7.js",
+    "static/media/map-img.png": "/FemHackathonNuwe/static/media/map-img.9a5bbf51801d6716ceab.png",
+    "index.html": "/FemHackathonNuwe/index.html",
+    "main.ced10831.css.map": "/FemHackathonNuwe/static/css/main.ced10831.css.map",
+    "main.7f0689f7.js.map": "/FemHackathonNuwe/static/js/main.7f0689f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ced10831.css",
+    "static/js/main.7f0689f7.js"
+  ]
+}
