@@ -17,6 +17,7 @@
 	* [Decisions by task](#decisions-by-task)
 	* [Figma wireframes](#figma-wireframes)
 7. [Associated content](#associated-content)
+8. [Collaborators](#collaborators)
 
 
 ## Introduction
@@ -138,5 +139,9 @@ $ npm i recharts
 + How the content is displayed on the website. The User Experience (UX) should be a priority.
 
 [Here is a link](https://www.figma.com/file/CoNsQK6K1zWxXIAMHVujLS/DataWave?type=design&node-id=0%3A1&mode=design&t=RrzqTpKQVwFehdHI-1) to our Figma document with wireframe and design system.
+
+## Collaborators
+ [<img src="https://avatars.githubusercontent.com/u/107352744?v=4" width=115><br><sub>Monica Blanco</sub>](https://github.com/mgblanco10) 
+  [<img src="https://avatars.githubusercontent.com/u/126439762?v=4" width=115><br><sub>Yana Tolstobrova</sub>](https://github.com/yana-tolstobrova) 
 
 
