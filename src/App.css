@@ -1,11 +1,11 @@
 .hero-section{
-    height: 575px;
+    height: 30rem;
     overflow: hidden;
 }
 .block{
     padding: 60px 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 h2{
     font-size: 2.5em;

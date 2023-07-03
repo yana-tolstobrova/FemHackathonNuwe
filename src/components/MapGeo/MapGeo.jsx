@@ -145,11 +145,11 @@ const MapGeo = () => {
         <img src={marImage} alt="Mar" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.4 }} />
         <div style={{ position: 'absolute', top: '0px', left: '0', width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <label htmlFor="yearInput" style={{ fontSize: '26px', color: 'gray', marginTop: '45px' }}>Select Year</label>
+            <label htmlFor="yearInput" style={{ fontSize: '26px', color: 'black', marginTop: '45px' }}>Select Year</label>
             <input type="range" id="yearInput" value={selectedYear} onChange={handleYearChange} min={1980} max={2020} style={{ fontSize: '26px', marginLeft: '10px', width: '300px', marginTop: '45px' }} />
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '0px' }}>
-            <span style={{ fontSize: '26px', color: 'gray', marginBottom: '30px' }}>{selectedYear}</span>
+            <span style={{ fontSize: '26px', color: 'black', marginBottom: '30px' }}>{selectedYear}</span>
           </div>
           <ResponsiveChoropleth
             data={countriesData.features}
@@ -193,7 +193,7 @@ const MapGeo = () => {
                   anchor: 'bottom-left',
                   direction: 'column',
                   justify: false,
-                  translateX: 360,
+                  translateX: 150,
                   translateY: -250,
                   itemsSpacing: 1,
                   itemWidth: 65,
