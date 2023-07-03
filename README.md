@@ -133,6 +133,16 @@ $ npm i axios
 ```
 $ npm i recharts
 ```
++ Create the data visualization of percentage of of internet user by country and year on the world map using the d3-geo and @nivo/geo libraries.
+
+And to get data from backend server: fecth. For this task it was installed
+```
+$ npm i d3-geo
+```
+```
+$ npm i @nivo/geo
+```
+
 
 **Associated tasks:**
 + Color palette both on the website as well as in each task.
@@ -156,9 +166,5 @@ $ npm i recharts
       <sub>Yana Tolstobrova</sub>
     </a>
   </div>
-</div>
-<div class="">
-[<img src="https://avatars.githubusercontent.com/u/107352744?v=4" width=115><br><sub>Monica Blanco</sub>](https://github.com/mgblanco10) 
-[<img src="https://avatars.githubusercontent.com/u/126439762?v=4" width=115><br><sub>Yana Tolstobrova</sub>](https://github.com/yana-tolstobrova) 
 </div>
 
